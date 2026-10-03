@@ -1,0 +1,66 @@
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 16px; 
+    cursor: pointer;
+    border-radius: 4px;
+    width: auto;         
+    height: auto;      
+    display: inline-block; 
+    font-size: 1.5em;   
+    line-height: 1;
+}
+
+/* Admin Sidebar */
+.admin-sidebar {
+    width: 0;
+    min-height: 100vh;
+    background: #222;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    padding: 24px 16px;
+    border-bottom: 1px solid #444;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    border-bottom: 1px solid #444;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
